@@ -7,6 +7,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutuspageComponent } from './aboutuspage/aboutuspage.component';
 import { NewseventspageComponent } from './newseventspage/newseventspage.component';
+import { VolunteerpageComponent } from './volunteerpage/volunteerpage.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NewseventspageComponent } from './newseventspage/newseventspage.compone
     AppComponent,
     HomepageComponent,
     AboutuspageComponent,
-    NewseventspageComponent
+    NewseventspageComponent,
+    VolunteerpageComponent
   ],
   imports: [
     BrowserModule,
