@@ -1,0 +1,52 @@
+body {
+    color: #807662;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 20vw;
+    max-width: 264px;
+    height: 100%;
+    margin: 10px;
+}
+
+.header-title{
+    color: #660000;
+    font-size: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation {
+    color: #660000;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#donate {
+    color: #e4e0c3;
+    background: #660000;
+    padding: 0px 25px;
+    padding-top: 15px;
+    margin-top: -15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
