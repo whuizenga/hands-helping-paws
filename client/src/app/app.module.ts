@@ -9,6 +9,7 @@ import { AboutuspageComponent } from './aboutuspage/aboutuspage.component';
 import { NewseventspageComponent } from './newseventspage/newseventspage.component';
 import { VolunteerpageComponent } from './volunteerpage/volunteerpage.component';
 import { AdoptionspageComponent } from './adoptionspage/adoptionspage.component';
+import { DonatepageComponent } from './donatepage/donatepage.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AdoptionspageComponent } from './adoptionspage/adoptionspage.component'
     AboutuspageComponent,
     NewseventspageComponent,
     VolunteerpageComponent,
-    AdoptionspageComponent
+    AdoptionspageComponent,
+    DonatepageComponent
   ],
   imports: [
     BrowserModule,

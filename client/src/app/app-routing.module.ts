@@ -6,6 +6,7 @@ import { AboutuspageComponent } from './aboutuspage/aboutuspage.component';
 import { NewseventspageComponent } from './newseventspage/newseventspage.component';
 import { VolunteerpageComponent } from './volunteerpage/volunteerpage.component';
 import { AdoptionspageComponent} from './adoptionspage/adoptionspage.component';
+import { DonatepageComponent } from './donatepage/donatepage.component'; 
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -14,7 +15,7 @@ const routes: Routes = [
   { path: 'news', component: NewseventspageComponent},
   { path: 'volunteer', component: VolunteerpageComponent},
   { path: 'adoptions', component: AdoptionspageComponent},
-
+  { path: 'donate', component: DonatepageComponent}
 ];
 
 @NgModule({
