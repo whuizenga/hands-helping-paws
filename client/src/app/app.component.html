@@ -1,17 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav>
-  <div class ="logo-header">
-    <img src="https://i.imgur.com/UHRNv4Q.jpg" class="logo" alt="Hands Helping Paws: Norman's only no kill TNR shelter" />
-    <h1 class="header-title">Norman's Largest Cat Shelter</h1>
-    <div class="logo"></div>
-  </div>
-  <div class="nav-links">
-    <a class="navigation" routerLink="/aboutus">About Us</a>
-    <a class="navigation" routerLink="/news">News & Events</a>
-    <a class="navigation" routerLink="/volunteer">Volunteer</a>
-    <a class="navigation" routerLink="/adoptions">Cat Adoptions</a>
-    <a id="donate" class="navigation" routerLink="/donate">Donate</a>
-  </div>
-</nav>
+<div class="page-container">
+  <nav>
+    <div class ="logo-header">
+      <a routerLink="/home"><img src="https://i.imgur.com/UHRNv4Q.jpg" class="logo" alt="Hands Helping Paws: Norman's only no kill TNR shelter" /></a>
+      <h1 class="header-title">Norman's Largest Cat Shelter</h1>
+      <div class="logo"></div>
+    </div>
+    <div class="nav-links">
+      <a class="navigation" routerLink="/aboutus">About Us</a>
+      <a class="navigation" routerLink="/news">News & Events</a>
+      <a class="navigation" routerLink="/volunteer">Volunteer</a>
+      <a class="navigation" routerLink="/adoptions">Cat Adoptions</a>
+      <a id="donate" class="navigation" routerLink="/donate">Donate</a>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+
+  <footer>
+    <div>
+      <p class="address">P.O. Box 1024</p>
+      <p class="address">Norman, Oklahoma</p>
+    </div>
+    <p class="address">501c3 Non-profit Organization</p>
+    <p class="address">Copyright 2017</p>
+  </footer>
+</div>
+
 
 

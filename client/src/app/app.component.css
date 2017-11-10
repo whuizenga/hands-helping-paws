@@ -2,6 +2,12 @@ body {
     color: #807662;
 }
 
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 nav {
     width: 100vw;
     display: flex;
@@ -39,8 +45,21 @@ nav {
     color: #660000;
     font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }
 
+footer {
+    color: #807662;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 40px;
+}
+
+.address {
+    margin: 3px;
+}
 #donate {
     color: #e4e0c3;
     background: #660000;
