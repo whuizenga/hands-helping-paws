@@ -8,6 +8,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutuspageComponent } from './aboutuspage/aboutuspage.component';
 import { NewseventspageComponent } from './newseventspage/newseventspage.component';
 import { VolunteerpageComponent } from './volunteerpage/volunteerpage.component';
+import { AdoptionspageComponent } from './adoptionspage/adoptionspage.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { VolunteerpageComponent } from './volunteerpage/volunteerpage.component'
     HomepageComponent,
     AboutuspageComponent,
     NewseventspageComponent,
-    VolunteerpageComponent
+    VolunteerpageComponent,
+    AdoptionspageComponent
   ],
   imports: [
     BrowserModule,
