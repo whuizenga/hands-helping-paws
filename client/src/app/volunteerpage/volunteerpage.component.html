@@ -1,3 +1,35 @@
-<p>
-  volunteerpage works!
-</p>
+<div class="volunteer-wrapper">
+  <div class="foster-container">
+    <h1>We need fosters!</h1>
+    <p>Do you love kittens?  Do you have time to care for little bundles of joy everyday?  We have a need for fosters to care for, and socialize kittens.  If you are willing to donate your time, space, and love please fill out the form below so we can contact you.</p>
+    <img claass="volunteer-kiitens" src="https://i.imgur.com/xwraK6s.jpg" alt="this pile of kittens is very cute" />
+  </div>
+  <div>
+    <div class="volunteer-other">
+      <h1>Other Opporunities</h1>
+      <p>We also are in need of people to care for our cats currently available for adoption at Pet Smart.  If you are able to donate one night a week to cleaning kennels, and making sure out gets get loved we want to hear from you! Fill out our contact form below.</p>
+    </div>
+    <div class="volunteer-other">
+      <h1>Let us know you are interested!</h1>
+      <form onSubmit="alert('Form doesnt actually work yet')">
+        <div>
+          <label for="name">*Full name:</label><br />
+          <input type="text" name="name" required/>
+        </div>
+        <div>
+          <label for="phone">Phone (xxx-xxx-xxxx):</label><br />
+          <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" />
+        </div>
+        <div>
+          <label for="email">*Email:</label><br />
+          <input type="email" name="email" required/>
+        </div>
+        <div>
+          <p>*Tell us what volunteer opportunties you are looking for:</p>
+          <textarea maxlength="1000" class="text-area" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
