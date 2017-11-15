@@ -17,6 +17,6 @@ export class AdoptionspageComponent implements OnInit {
   }
 
   getCats(): void {
-    console.log(this.adoptionsSevice.getCats());
+    this.adoptionsSevice.getCats()
   }
 }

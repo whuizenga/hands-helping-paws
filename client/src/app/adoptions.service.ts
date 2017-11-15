@@ -1,16 +1,21 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
+
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import axios from 'axios';
 
 @Injectable()
 export class AdoptionsService {
 
-  constructor() { }
+  private adoptionsUrl = 'api/adoptions';
 
-  getCats() {
-    let cats = {}
-    axios.get("http://api.petfinder.com/shelter.getPets?key=27da77ea3227fa6606883384d99fda4e&id=OK252&format=json").then((res) => {
-      cats = res.data;
+  constructor(private http: HttpClient) { }
+
+  getCats(): Observable<any>{
+    axios.get('/api/adoptions').then((res) => {
+      console.log(res);
     })
-    return cats;
+    return;
   }
 }
