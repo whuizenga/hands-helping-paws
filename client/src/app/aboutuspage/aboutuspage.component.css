@@ -8,11 +8,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .aboutus-title {
     color: #660000;
     margin: 5px;
+    font-size: 28px;
 }
 .text-container {
     width: 50vw;
@@ -25,4 +27,5 @@
 
 .text-container p {
     margin: 5px;
+    font-size: 18px;
 }
