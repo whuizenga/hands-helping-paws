@@ -189,3 +189,5 @@ authenticateUser = (headers) => {
         })
     })
 };
+
+module.exports = router;
