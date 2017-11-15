@@ -6,6 +6,8 @@ const app = express();
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI);
 
+const UserController = require('./controllers/userController');
+
 const connection = mongoose.connection;
 connection.on('connected', () => {
   console.log('Mongoose Connected Successfully');    
@@ -19,6 +21,7 @@ connection.on('error', (err) => {
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/client/src/'));
+app.use('/api/users', UserController);
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/client/src/index.html');
