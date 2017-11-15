@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -10,6 +9,8 @@ import { NewseventspageComponent } from './newseventspage/newseventspage.compone
 import { VolunteerpageComponent } from './volunteerpage/volunteerpage.component';
 import { AdoptionspageComponent } from './adoptionspage/adoptionspage.component';
 import { DonatepageComponent } from './donatepage/donatepage.component';
+
+import { AdoptionsService } from './adoptions.service';
 
 
 @NgModule({
@@ -24,9 +25,9 @@ import { DonatepageComponent } from './donatepage/donatepage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [ AdoptionsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

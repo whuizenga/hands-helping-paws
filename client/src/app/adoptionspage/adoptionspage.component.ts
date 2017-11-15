@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AdoptionsService } from '../adoptions.service';
 
 @Component({
   selector: 'app-adoptionspage',
@@ -6,11 +7,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./adoptionspage.component.css'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class AdoptionspageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private adoptionsSevice: AdoptionsService) { }
 
   ngOnInit() {
+    this.getCats();
   }
 
+  getCats(): void {
+    console.log(this.adoptionsSevice.getCats());
+  }
 }
