@@ -14,7 +14,7 @@ export class AdoptionsService {
 
   getCats(): Observable<any>{
     axios.get('/api/adoptions').then((res) => {
-      console.log(res);
+      console.log(res.data.pet);
     })
     return;
   }
