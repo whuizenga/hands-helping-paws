@@ -12,6 +12,7 @@ import { AdoptionspageComponent } from './adoptionspage/adoptionspage.component'
 import { DonatepageComponent } from './donatepage/donatepage.component';
 
 import { AdoptionsService } from './adoptions.service';
+import { MailService } from './mail.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { AdoptionsService } from './adoptions.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ AdoptionsService ],
+  providers: [ AdoptionsService, MailService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

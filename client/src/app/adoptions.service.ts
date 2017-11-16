@@ -13,9 +13,9 @@ export class AdoptionsService {
   constructor(private http: HttpClient) { }
 
   getCats(): Observable<any>{
-    axios.get('/api/adoptions').then((res) => {
-      console.log(res.data.pet);
-    })
-    return;
+    // axios.get('/api/adoptions').then((res) => {
+    //   console.log(res.data.pet);
+    // })
+    return this.http.get(this.adoptionsUrl);
   }
 }
