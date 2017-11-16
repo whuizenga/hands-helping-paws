@@ -22,13 +22,13 @@ connection.on('error', (err) => {
 
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + '/client/src/'));
+app.use(express.static(__dirname + '/client/dist/'));
 app.use('/api/users', UserController);
 app.use('/api/adoptions', AdoptionsController);
 app.use('/api/mail', MailController);
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/client/src/index.html');
+  res.sendFile(__dirname + '/client/dist/index.html');
 })
 
 const PORT = process.env.PORT || 3001;
