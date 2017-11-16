@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
+const path = require('path');
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI);
 
@@ -27,9 +28,9 @@ app.use('/api/users', UserController);
 app.use('/api/adoptions', AdoptionsController);
 app.use('/api/mail', MailController);
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/client/dist/index.html');
-})
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/client/dist/index.html'));
+});
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
