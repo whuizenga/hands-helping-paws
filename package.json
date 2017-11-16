@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/whuizenga/hands-helping-paws#readme",
   "dependencies": {
+    "@angular/cli": "1.5.0",
+    "@angular/compiler-cli": "^5.0.0",
     "axios": "^0.16.2",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
