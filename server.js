@@ -8,6 +8,7 @@ mongoose.connect(process.env.MONGODB_URI);
 
 const UserController = require('./controllers/userController');
 const AdoptionsController = require('./controllers/adoptionsController');
+const MailController = require('./controllers/mailController');
 
 const connection = mongoose.connection;
 connection.on('connected', () => {
@@ -24,6 +25,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/client/src/'));
 app.use('/api/users', UserController);
 app.use('/api/adoptions', AdoptionsController);
+app.use('/api/mail', MailController);
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/client/src/index.html');

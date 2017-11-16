@@ -30,10 +30,16 @@ export class VolunteerpageComponent implements OnInit {
       email,
       message,
     }
-    
+
     this.mailService.sendMessage(payload).subscribe(res => {
-      thanks.style.color = "#254467"
-      thanks.innerHTML = "Thank you!"
+      console.log(res);
+      if(res.message){
+        thanks.style.color = "#254467"
+        thanks.innerHTML = "Thank you!"
+      }
+      if(res.error){
+        thanks.innerHTML = "Error sending message. Please try later."
+      }
     })
   }
 }
