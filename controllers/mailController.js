@@ -3,11 +3,16 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.post('/', (req, res) => {
+    username = process.env.EMAILUSERNAME;
+    password = process.env.EMAILPASSWORD;
+    target = process.env.EMAILTARGET;
+
+    console.log(username + " " + password);
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: process.env.EMAILUSERNAME,
-            pass: process.env.EMAILPASSWORD
+            user: username,
+            pass: password
         }
     });
 
@@ -19,7 +24,7 @@ router.post('/', (req, res) => {
 
     var mailOptions = {
         from: "noreply@handshelpingpaws.org",
-        to: process.env.EMAILTARGET,
+        to: target,
         subject: "HHP Volunteer",
         text: text
     }
