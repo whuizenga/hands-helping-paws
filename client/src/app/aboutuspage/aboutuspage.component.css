@@ -32,6 +32,9 @@
 }
 
 @media screen and (max-width:800px){
+    .aboutus-container{
+        min-height: 80vh;
+    }
     .text-container{
         width: 90vw;
         margin: 15px;
