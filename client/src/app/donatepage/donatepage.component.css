@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-around;
     background: #cccccc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .donate-help {
@@ -23,6 +23,7 @@
 .donate-help h1 {
     color: #660000;
     margin: 0px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .donate-help p{

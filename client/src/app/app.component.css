@@ -29,7 +29,7 @@ nav {
 .header-title{
     color: #660000;
     font-size: 5vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .nav-links {
@@ -40,13 +40,13 @@ nav {
 .navigation {
     color: #660000;
     font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
 }
 
 footer {
     color: #807662;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
