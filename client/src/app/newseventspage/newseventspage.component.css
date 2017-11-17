@@ -1,0 +1,24 @@
+.news-container{
+    width: 100vw;
+    min-height: 70vh;
+    background: #cccccc;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.facebook-container{
+    width: 500px;
+    background: white;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    color: #660000;
+}
+
+.facebook-container h1{
+    margin: 5px;
+}
