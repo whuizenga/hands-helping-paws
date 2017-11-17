@@ -13,4 +13,8 @@ export class NewseventspageComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngAfterViewInit(){
+   
+  }
+
 }

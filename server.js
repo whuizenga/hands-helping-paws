@@ -7,7 +7,6 @@ const path = require('path');
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI);
 
-const UserController = require('./controllers/userController');
 const AdoptionsController = require('./controllers/adoptionsController');
 const MailController = require('./controllers/mailController');
 
@@ -24,7 +23,6 @@ connection.on('error', (err) => {
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/client/dist/'));
-app.use('/api/users', UserController);
 app.use('/api/adoptions', AdoptionsController);
 app.use('/api/mail', MailController);
 
