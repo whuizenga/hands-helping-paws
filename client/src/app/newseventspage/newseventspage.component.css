@@ -24,3 +24,14 @@
     margin: 5px;
     border-bottom: 1px dashed #660000;
 }
+
+@media screen and (max-width:800px){
+    .news-container{
+        flex-direction: column;
+    }
+
+    .facebook-container{
+        width: 85vw;
+        margin: 15px auto;
+    }
+}

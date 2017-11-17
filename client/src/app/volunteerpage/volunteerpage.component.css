@@ -74,3 +74,19 @@ textarea:focus{
     color: #660000;
     outline: none;
 }
+
+@media screen and (max-width:800px){
+    .volunteer-wrapper{
+        flex-direction: column;
+    }
+
+    .foster-container{
+        margin-bottom: 0px;
+    }
+    h1 {
+        margin: 0px;
+    }
+    p{
+        margin: 0px;
+    }
+}

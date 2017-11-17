@@ -1,9 +1,19 @@
 <div class="page-container">
   <nav>
+    <div class="dropdown">
+      <span>...</span>
+      <div class="dropdown-content">
+          <a class="naviagtion-dropdown" routerLink="/aboutus">About Us</a>
+          <a class="naviagtion-dropdown" routerLink="/news">News & Events</a>
+          <a class="naviagtion-dropdown" routerLink="/volunteer">Volunteer</a>
+          <a class="naviagtion-dropdown" routerLink="/adoptions">Cat Adoptions</a>
+          <a class="naviagtion-dropdown" routerLink="/donate">Donate</a>
+      </div>
+    </div>
     <div class ="logo-header">
       <a routerLink="/home"><img src="https://i.imgur.com/UHRNv4Q.jpg" class="logo" alt="Hands Helping Paws: Norman's only no kill TNR shelter" /></a>
       <h1 class="header-title">Norman's Largest Cat Rescue</h1>
-      <div class="logo"></div>
+      <div class="logo" id="social"></div>
     </div>
     <div class="nav-links">
       <a class="navigation" routerLink="/aboutus">About Us</a>
