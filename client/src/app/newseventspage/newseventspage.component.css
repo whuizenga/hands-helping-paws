@@ -21,4 +21,5 @@
 
 .facebook-container h1{
     margin: 5px;
+    border-bottom: 1px dashed #660000;
 }
