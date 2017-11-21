@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-newseventspage',
@@ -11,10 +12,6 @@ export class NewseventspageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
-  ngAfterViewInit(){
-   
   }
 
 }

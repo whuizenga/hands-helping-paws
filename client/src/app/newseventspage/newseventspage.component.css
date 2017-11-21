@@ -35,4 +35,8 @@
         width: 85vw;
         margin: 15px auto;
     }
+
+    .facebook-container iframe{
+        width: 100%;
+    }
 }
