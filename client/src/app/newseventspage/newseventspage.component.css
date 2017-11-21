@@ -1,6 +1,6 @@
 .news-container{
     width: 100vw;
-    min-height: 70vh;
+    min-height: 80vh;
     background: #cccccc;
     display: flex;
     justify-content: space-around;

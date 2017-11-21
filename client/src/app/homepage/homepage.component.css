@@ -10,8 +10,7 @@
     width: 100vw;
     min-height: 70vh;
     border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background: #cccccc;
+    
 }
 @media screen and (max-width:800px){
     .homepage-welcome{
@@ -19,5 +18,7 @@
         color: #660000;
         font-size: 24px;
         text-align: center;
+        background: #cccccc;
+        border-bottom: 1px solid black;
     }
 }
